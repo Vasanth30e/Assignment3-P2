@@ -11,13 +11,15 @@ namespace Assignment3_P2
         static void Main(string[] args)
         {
             //String to Integer using TryParse
-            string strNumber = "123";
-            int number;
+            string strNumber = "15";
+            int number = 5;
 
             try
             {
 
                 Int32.TryParse(strNumber, out number);
+                Console.WriteLine("Added the string and the Integer" + (number+strNumber));
+               
             }
             catch (Exception e)
             {
@@ -25,6 +27,8 @@ namespace Assignment3_P2
                 Console.WriteLine("The string '" + strNumber + "' cannot be converted to an integer");
 
             }
+
+            /*
 
             //String to DateTime Object
             string strDateTime = "2023-07-12T12:34:56";
@@ -56,6 +60,7 @@ namespace Assignment3_P2
                 
                 Console.WriteLine("The string '" + strTimeSpan + "' cannot be converted to a TimeSpan");
             }
+            */
 
 
         }
