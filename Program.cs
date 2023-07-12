@@ -32,7 +32,7 @@ namespace Assignment3_P2
                 Console.ReadKey(); 
             }
 
-            /*
+            
 
             //String to DateTime Object
             string strDateTime = "2023-07-12T12:34:56";
@@ -65,7 +65,7 @@ namespace Assignment3_P2
             {
                 
                 timeSpan = TimeSpan.Parse(strTimeSpan);
-                timeSpan = timeSpan.AddHours(2);
+                timeSpan = timeSpan.Add(new TimeSpan(0, 2, 0));
             }
             catch (Exception e)
             {
@@ -76,7 +76,7 @@ namespace Assignment3_P2
             { 
                 Console.ReadKey(); 
             }
-            */
+            
 
 
         }
